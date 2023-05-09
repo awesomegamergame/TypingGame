@@ -1,0 +1,18 @@
+﻿<Window x:Class="TypingGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TypingGame"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="Typing Game" Height="350" Width="500"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="wordBox" Content="Text" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="192,70,194,174"/>
+        <TextBox x:Name="type" TextWrapping="Wrap" Text="" KeyDown="type_KeyDown" TextAlignment="Center" VerticalContentAlignment="Center" Margin="192,161,192,75"/>
+        <Label x:Name="counter" Content="10" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" Margin="412,0,0,243"/>
+        <Label x:Name="score" Content="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="0,0,406,288"/>
+
+    </Grid>
+</Window>
